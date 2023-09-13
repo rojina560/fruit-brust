@@ -18,6 +18,7 @@
               colors: {
                 clifford: '#da373d',
                 coral:'#F85559',
+                light:'#fbc0a8',
                 
               }
             }
@@ -40,6 +41,9 @@
         .meet-section{
           background-image: linear-gradient(0deg, rgba(18, 18, 18, 0.70),rgba(18, 18, 18, 0.70) ), url('/images/banner1.png');
           background-position: center;
+          background-size: cover;
+
+         
         }
         .social-media a{
           background:#f85559 ;
@@ -47,6 +51,10 @@
           border-radius: 30px;
           margin-right: 8px;
 
+
+        }
+        .card-border{
+          border: 1px solid rgba(18, 18, 18, 0.10);
 
         }
       
@@ -124,7 +132,230 @@
 </section> -->
  
    </header>
-   <main>
+   <main class="px-6">
+    <!-- Deal of the day  -->
+    <section class="max-w-6xl mx-auto my-24 ">
+      <!-- deal-section parent  -->
+      <div class="flex flex-col text-center gap-14 md:flex-row justify-between pb-20 align-middle ">
+        <div>
+          <h2 class="text-3xl font-bold" >Deal of the day</h2>
+          <p class="text-gray-400 pt-4">Contrary to popular belief, is not simply random text. It  has roots in a piece of classical <br> Latin literature from  45 BC, making it over 2000 years old.</p>
+        </div>
+        <div class="flex justify-between gap-4 items-center">
+          <div>
+            <h2 class="text-3xl font-bold">29</h2>
+            <p class="text-gray-400">days</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-ellipsis-vertical mb-[20px]"></i>
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold">15</h2>
+            <p class="text-gray-400">Hours</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-ellipsis-vertical  mb-[20px]"></i>
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold">28</h2>
+            <p class="text-gray-400">minutes</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-ellipsis-vertical  mb-[20px]"></i>
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold">08</h2>
+            <p class="text-gray-400">seconds</p>
+          </div>
+        </div>
+
+      </div>
+      <!-- deal of day card section -->
+      <div class="grid grid-cols-1 gap-20 md:grid-cols-2 lg:grid-cols-4 md:gap-6">
+      <div class="card card-border p-6">
+        <figure class="flex justify-center">
+          <img src="/images/fruit9.png" alt="Shoes" class="rounded-xl mb-4" />
+        </figure>
+        <div class="card-body items-center text-center space-y-4">
+          <h2 class="card-title text-3xl font-bold">12.90$ - 18.85$</h2>
+          <hr>
+          <p class="text-gray-400">Banana</p>
+          <div>
+            <i class="fa-solid fa-star text-coral"></i>
+            <i class="fa-solid fa-star-half text-coral"></i>
+            <i class="fa-solid fa-star text-light"></i>
+            <i class="fa-solid fa-star  text-light"></i>
+            <i class="fa-solid fa-star  text-light"></i>
+
+          </div>
+
+          <!-- modal box  -->
+            <button class="btn text-coral text-center" onclick="my_modal_2.showModal()">details</button>
+            <dialog id="my_modal_2" class="modal">
+              <div class="modal-box">
+                <figure class="flex justify-center">
+                  <img src="/images/fruit5.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center py-10 px-20">
+                  <h2 class="card-title text-3xl font-bold "> banana</h2>
+                  <p class="text-gray-500 py-[10px]">Professional employees are there for you to pick the most  amazing and fresh fruits.</p>
+                  <div>
+                    <i class="fa-solid fa-star text-coral"></i>
+                    <i class="fa-solid fa-star-half text-coral"></i>
+                    <i class="fa-solid fa-star text-light"></i>
+                    <i class="fa-solid fa-star  text-light"></i>
+                    <i class="fa-solid fa-star  text-light"></i>
+
+                  </div>
+                
+              </div>
+              <form method="dialog" class="modal-backdrop">
+                <button class="text-coral border border-coral py-[10px] px-[15px] rounded-md">close</button>
+                <button class="bg-coral text-white py-[10px] px-[15px] rounded-md ml-4">Buy now</button>
+              </form>
+            </dialog>
+         
+        </div>
+      </div>
+      <div class="card card-border p-6">
+        <figure class="flex justify-center">
+          <img src="/images/fruit8.png" alt="Shoes" class="rounded-xl mb-4" />
+        </figure>
+        <div class="card-body items-center text-center space-y-4">
+          <h2 class="card-title text-3xl font-bold">12.90$ - 18.85$</h2>
+          <hr>
+          <p class="text-gray-400">Red Dragon</p>
+          <div>
+            <i class="fa-solid fa-star text-coral"></i>
+            <i class="fa-solid fa-star text-coral"></i>
+            <i class="fa-solid fa-star text-light"></i>
+            <i class="fa-solid fa-star  text-light"></i>
+            <i class="fa-solid fa-star  text-light"></i>
+
+          </div>
+
+          <!-- modal box  -->
+            <button class="btn text-coral text-center" onclick="my_modal_2.showModal()">details</button>
+            <dialog id="my_modal_2" class="modal">
+              <div class="modal-box">
+                <figure class="flex justify-center">
+                  <img src="/images/fruit5.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center py-10 px-20">
+                  <h2 class="card-title text-3xl font-bold ">Red Dragon</h2>
+                  <p class="text-gray-500 py-[10px]">Professional employees are there for you to pick the most  amazing and fresh fruits.</p>
+                  <div>
+                    <i class="fa-solid fa-star text-coral"></i>
+                    <i class="fa-solid fa-star text-coral"></i>
+                    <i class="fa-solid fa-star text-light"></i>
+                    <i class="fa-solid fa-star  text-light"></i>
+                    <i class="fa-solid fa-star  text-light"></i>
+
+                  </div>
+                
+              </div>
+              <form method="dialog" class="modal-backdrop">
+                <button class="text-coral border border-coral py-[10px] px-[15px] rounded-md">close</button>
+                <button class="bg-coral text-white py-[10px] px-[15px] rounded-md ml-4">Buy now</button>
+              </form>
+            </dialog>
+         
+        </div>
+      </div>
+      <div class="card card-border p-6">
+        <figure class="flex justify-center">
+          <img src="/images/fruit3.png" alt="Shoes" class="rounded-xl mb-4" />
+        </figure>
+        <div class="card-body items-center text-center space-y-4">
+          <h2 class="card-title text-3xl font-bold">12.90$ - 18.85$</h2>
+          <hr>
+          <p class="text-gray-400">Mango</p>
+          <div>
+            <i class="fa-solid fa-star text-coral"></i>
+            <i class="fa-solid fa-star text-coral"></i>
+            <i class="fa-solid fa-star text-light"></i>
+            <i class="fa-solid fa-star  text-light"></i>
+            <i class="fa-solid fa-star  text-light"></i>
+
+          </div>
+
+          <!-- modal box  -->
+            <button class="btn text-coral text-center" onclick="my_modal_2.showModal()">details</button>
+            <dialog id="my_modal_2" class="modal">
+              <div class="modal-box">
+                <figure class="flex justify-center">
+                  <img src="/images/fruit5.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center py-10 px-20">
+                  <h2 class="card-title text-3xl font-bold "> mango</h2>
+                  <p class="text-gray-500 py-[10px]">Professional employees are there for you to pick the most  amazing and fresh fruits.</p>
+                  <div>
+                    <i class="fa-solid fa-star text-coral"></i>
+                    <i class="fa-solid fa-star-half text-coral"></i>
+                    <i class="fa-solid fa-star text-light"></i>
+                    <i class="fa-solid fa-star  text-light"></i>
+                    <i class="fa-solid fa-star  text-light"></i>
+
+                  </div>
+                
+              </div>
+              <form method="dialog" class="modal-backdrop">
+                <button class="text-coral border border-coral py-[10px] px-[15px] rounded-md">close</button>
+                <button class="bg-coral text-white py-[10px] px-[15px] rounded-md ml-4">Buy now</button>
+              </form>
+            </dialog>
+         
+        </div>
+      </div>
+      <div class="card card-border p-6">
+        <figure class="flex justify-center">
+          <img src="/images/fruit2.png" alt="Shoes" class="rounded-xl mb-4" />
+        </figure>
+        <div class="card-body items-center text-center space-y-4">
+          <h2 class="card-title text-3xl font-bold">12.90$ - 18.85$</h2> <hr>
+          <p class="text-gray-400">Orange</p>
+          <div>
+            <i class="fa-solid fa-star text-coral"></i>
+            <i class="fa-solid fa-star text-coral"></i>
+            <i class="fa-solid fa-star text-light"></i>
+            <i class="fa-solid fa-star  text-light"></i>
+            <i class="fa-solid fa-star  text-light"></i>
+
+          </div>
+
+          <!-- modal box  -->
+            <button class="btn text-coral text-center" onclick="my_modal_2.showModal()">details</button>
+            <dialog id="my_modal_2" class="modal">
+              <div class="modal-box">
+                <figure class="flex justify-center">
+                  <img src="/images/fruit5.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center py-10 px-20">
+                  <h2 class="card-title text-3xl font-bold ">orange</h2>
+                  <p class="text-gray-500 py-[10px]">Professional employees are there for you to pick the most  amazing and fresh fruits.</p>
+                  <div>
+                    <i class="fa-solid fa-star text-coral"></i>
+                    <i class="fa-solid fa-star-half text-coral"></i>
+                    <i class="fa-solid fa-star text-light"></i>
+                    <i class="fa-solid fa-star  text-light"></i>
+                    <i class="fa-solid fa-star  text-light"></i>
+
+                  </div>
+                
+              </div>
+              <form method="dialog" class="modal-backdrop">
+                <button class="text-coral border border-coral py-[10px] px-[15px] rounded-md">close</button>
+                <button class="bg-coral text-white py-[10px] px-[15px] rounded-md ml-4">Buy now</button>
+              </form>
+            </dialog>
+         
+        </div>
+      </div>
+    </div>
+    
+     
+
+    </section>
     <!-- Meet the team section  -->
      <section class="max-w-[1050px] mx-auto pb-6 lg:h-[500px] meet-section">
       <h2 class="text-center pt-16 text-4xl text-white font-bold">Meet the team section</h2>
@@ -136,7 +367,7 @@
         <div class="space-y-[5px] text-white">
           <img src="images/member1.png" alt="">
           <h2 class="text-2xl pt-4">Awlad Hossain</h2>
-          <p  class="pb-2">Fruits Expert</p>
+          <p class="pb-2">Fruits Expert</p>
           <div class="social-media">
             <a href=""><i class="fa-brands fa-twitter"></i></a>
             <a href=""><i class="fa-brands fa-facebook"></i></a>
@@ -147,7 +378,7 @@
         <div class="space-y-[5px] text-white">
           <img src="images/member2.png" alt="">
           <h2 class="text-2xl pt-4" >Safia Chowdhury</h2>
-          <p  class="pb-2">Fruits Expert</p>
+          <p class="pb-2">Fruits Expert</p>
           <div class="social-media">
             <a href=""><i class="fa-brands fa-twitter"></i></a>
             <a href=""><i class="fa-brands fa-facebook"></i></a>
@@ -158,7 +389,7 @@
         <div class="space-y-[5px] text-white">
           <img src="images/member3.png" alt="">
           <h2 class="text-2xl pt-4">Rokib Hossain</h2>
-          <p  class="pb-2">Fruits Expert</p>
+          <p class="pb-2" >Fruits Expert</p>
           <div class="social-media"> 
             <a href=""><i class="fa-brands fa-twitter"></i></a>
             <a href=""><i class="fa-brands fa-facebook"></i></a>
