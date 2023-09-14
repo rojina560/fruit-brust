@@ -60,7 +60,9 @@
         .slider{
           background-image: url('./images/banner1.png');
         }
-      
+      .search-box{
+        border-radius: 40px;
+      }
 
          
       </style>
@@ -89,21 +91,23 @@
        <div><img class="w-10" src="./images/logo.png" alt=""></div>
        <a class="btn btn-ghost normal-case text-xl"> daisyUI</a>
           </div>
-          <div class="navbar-end bg-white  lg:flex text-black">
-            <div class=" w-40 px-8 py-[10px] rounded-3xl">search</div>
-            <button class="btn rounded-full pr-6"> 
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-           
-            </button>
-           
-        
+          <div class="search-box">
+            <div class="navbar-end bg-white  lg:flex text-black">
+              <div class=" w-40 px-8 py-[10px] ">search</div>
+              <button class="btn pr-6"> 
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+             
+              </button>
+             
+          
+            </div>
           </div>
         </div>
   </nav>
  
   <section>
     <div
-      class="carousel w-full overflow-hidden"
+      class="carousel w-full overflow-hidden z-20"
     >
       <div id="slide1" class="carousel-item relative w-full">
         <img  class="w-full" src="/images/banner1.png"/>
@@ -121,9 +125,9 @@
             <p class="text-center text-white">
               We supply highly quality organic product
             </p>
-            <button class="btn btn-bg border-0 text-white">Shop Now</button>
+            <button class="btn btn-bg border-0 text-white bg-coral py-[10px] px-[15px] rounded-md">Shop Now</button>
           </div>
-          <a href="#slide2" class="btn btn-circle">❯</a>
+          <a href="#slide2" class="btn btn-circle text-white">❯</a>
         </div>
       </div>
      
@@ -134,14 +138,9 @@
 
   
   <!-- fruit card  -->
-  <div class="flex align-middle text-center bg-slate-400 max-w-4xl  mx-auto -mt-20 z-20">
-    <div class="">
-      <img src="./images/fruit1.png" alt="">
-      <h2 class="pt-4">Strawberry</h2>
-    </div>
+ 
+</section>
 
-  </div>
-</section> 
  
    </header>
    
